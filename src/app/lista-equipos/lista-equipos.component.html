@@ -1,0 +1,12 @@
+<table>      
+      <div *ngFor="let equipo of listaEquipos">
+            <tr>
+                  <td>
+                        <span class="label label-default" >{{equipo.nombre}}</span>
+                  </td>
+                  <td>
+                        <button class="btn btn-default" (click)='delete(equipo.nombre)'><span class='glyphicon glyphicon-remove'></span>Borrar</button>
+                  </td>                              
+            </tr>
+      </div>              
+</table>
