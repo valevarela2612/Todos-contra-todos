@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { EquiposComponent } from './equipos/equipos.component';
 import { ListaEquiposComponent } from './lista-equipos/lista-equipos.component';
 import { CommonModule } from '@angular/common';
+import { FixtureComponent } from './fixture/fixture.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EquiposComponent,
     ListaEquiposComponent,
+    FixtureComponent,
   ],
   imports: [
     CommonModule,

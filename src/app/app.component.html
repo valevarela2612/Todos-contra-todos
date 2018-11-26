@@ -6,8 +6,10 @@
                 <app-equipos></app-equipos>  
             </div>
             <div class="col-xs-8">
-                <div class='equipos'>Equipos agregados:</div>       
-                <app-lista-equipos></app-lista-equipos>
+                <div class='equipos'>Equipos agregados:</div>
+                <button (click)='fixture()'>Generar Fixture</button>
+                <app-lista-equipos *ngif="showFirst" ></app-lista-equipos>
+                <my-other-component *ngif="!showFirst" ></my-other-component> 
             </div>
         </div>
 </div>    
